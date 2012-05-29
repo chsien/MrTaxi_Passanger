@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="#ffe5e5e5">
+	    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1.5"
+	        android:orientation="vertical" >
+
+	       	<ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:orientation="vertical">
+	                
+			        <DatePicker
+			            android:id="@+id/datePicker1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content" />
+		
+			        <TimePicker
+			            android:id="@+id/timePicker1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="5dp"
+			            android:layout_gravity="center_horizontal" />
+			        
+			        <TextView
+			            android:id="@+id/textView_timeTip"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_horizontal|bottom"
+			            android:layout_marginTop="2dp"
+			            android:text="請選擇時間日期"
+			            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+	       		</LinearLayout>
+	        </ScrollView>
+	    </LinearLayout>
+
+	    <requestFocus android:layout_weight="1.5" />
+	        
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="#ffb2b2b2">
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_weight="0" >
+	
+	            <TextView
+	                android:id="@+id/textView_beginLocation"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="5dp"
+	                android:text="@string/immediate_textViewContent_beginLocation"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <EditText
+	                android:id="@+id/editText_beginLocation"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:text=""
+	                android:maxLines="1"
+	                android:singleLine="true"  />
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="5dp" >
+	
+	            <TextView
+	                android:id="@+id/textView_terminalLocation"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="5dp"
+	                android:text="@string/immediate_textViewContent_terminalLocation"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <EditText
+	                android:id="@+id/editText_terminalLocation"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:text=""
+	                android:maxLines="1"
+	                android:singleLine="true"  />
+	        </LinearLayout>
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <Button
+	            android:id="@+id/button_request"
+	            android:layout_width="200dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginTop="10dp"
+	            android:text="@string/immediate_buttonContent_request" />
+	    </LinearLayout>
+	
+	</LinearLayout>
+	
+</FrameLayout>

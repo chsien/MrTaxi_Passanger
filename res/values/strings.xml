@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mr.Taxi Passanger</string>
+    
+	<string name="main_textViewContent_copyright">版權所有 © 2012 NCCU CS Mr.Taxi</string>
+	<string name="main_buttonContent_immediate">立即叫車</string>
+	<string name="main_buttonContent_reservation">預約叫車</string>
+	<string name="main_textViewContent_standaloneTip">無網路連接</string>
+
+	<string name="register_textViewContent_photoTip">請點擊上方圖片修改</string>
+    <string name="register_textViewContent_name">乘客姓名</string>
+    <string name="register_textViewContent_phone">電話號碼</string>
+    <string name="register_buttonContent_request">開始使用</string>
+		
+	<string name="immediate_textViewContent_photoTip">拍下您目前的打扮</string>
+	<string name="immediate_textViewContent_beginLocation">出發地</string>
+	<string name="immediate_textViewContent_terminalLocation">目的地</string>
+	<string name="immediate_buttonContent_request">確定送出</string>
+	
+	<string name="selectLocation_textViewContent_location">地點</string>
+	<string name="selectLocation_buttonContent_request">確定地點</string>
+</resources>

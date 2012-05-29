@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffe5e5e5"
+        android:orientation="vertical" >
+        
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1.5" >
+
+             <ImageView
+                 android:id="@+id/imageView_taxiIcon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:src="@drawable/taxi_icon" />
+
+        </FrameLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffb2b2b2"
+            android:orientation="vertical" >
+
+	        <Button
+	            android:id="@+id/button_immediate"
+	            android:layout_width="200dp"	            
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="10dp"
+	            android:text="@string/main_buttonContent_immediate" />
+
+	        <Button
+	            android:id="@+id/button_reservation"
+	            android:layout_width="200dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginBottom="10dp"
+	            android:text="@string/main_buttonContent_reservation" />
+                	            
+        </LinearLayout>
+        
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:orientation="vertical" >
+
+			<TextView
+			    android:id="@+id/textView_copyright"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_horizontal"
+			    android:text="@string/main_textViewContent_copyright"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+               
+    </LinearLayout>
+
+	<View
+	    android:id="@+id/view_standaloneTip"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:clickable="true"
+	    android:background="#b0141414" />
+	
+	<TextView
+	    android:id="@+id/textView_standaloneTip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:text="@string/main_textViewContent_standaloneTip"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+</FrameLayout>
